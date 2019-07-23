@@ -69,20 +69,8 @@ System.out.println("The number is odd");
 System.out.print("The number is even");
 }
 }
-}*/
-           if ((11 & 1) == 0) {
-            System.out.println("EVEN NUMBER");
-        } else {
-            System.out.println("ODD NUMBER");
-        }
-           ////////////////////////
+}*/  
         
-        if ( (11/2) * 2 == 11) {
-            System.out.println("Even number **************");
-        }
-         else {
-            System.out.println("Odd number ******************");
-        }
         ////////////////////////
         System.out.print("Even numbers are :");
         for(int i=0; i<array.length;i++){
@@ -132,10 +120,11 @@ System.out.print("The number is even");
 			{
 				modeCount = count;
 				mode = array[i];
+                                
 			}
 		}
 		
-	System.out.println("\n Mode value is " + mode +" " + modeCount);
+	System.out.println("\n Mode value is " + mode +" Mode count is" + modeCount);
         
         // range = max -min
         System.out.println("\nRange is " + (max-min) );
