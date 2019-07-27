@@ -54,11 +54,12 @@ int arr[] = { 14, 46, 47, 86, 92, 52, 48, 36, 66, 85 };
 } */
     
     ///Using heap
-    //The default PriorityQueue is implemented with Min-Heap, that is the top element is the minimum one in the heap
+    //The default PriorityQueue is implemented with Min-Heap,
+    //that is the top element is the minimum one in the heap
     //so min value will be the "HEAD"
    public static int findKthLargest(int arr[], int n) {
         PriorityQueue<Integer> q = new PriorityQueue<Integer>(n);
-        for (int i : arr) {
+        for (int i : arr) { 
         q.offer(i); //insert in queue
             System.out.println(q);
             if (q.size() > n) { //return the number of elements
@@ -70,6 +71,18 @@ int arr[] = { 14, 46, 47, 86, 92, 52, 48, 36, 66, 85 };
 
         return q.peek(); //retreives head but does not removes it
     }
+   //By sorting 
+   int findNthLargestBySorting(Integer[] arr, int n) {
+   Arrays.sort(arr);
+   int targetIndex = arr.length - n;
+   return arr[targetIndex];
+}
+   //by sorting in descending order
+   
+   int findNthLargestBySortingDesc(Integer[] arr, int n) {
+    Arrays.sort(arr, Collections.reverseOrder());
+    return arr[n-1];
+}
     public static void main(String[] args) {
         int arr[] = { 14, 6, 47, 46,86, 92, 52, 48, 36, 66, 85 };
         int n =2;
