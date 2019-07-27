@@ -12,13 +12,12 @@ import java.util.Scanner;
  * @author MAMUN
  */
 public class SumOfAllDigits {
-     static int sumOfAllDigitsInANumber(int n){
-       int temp=0; int r = 0, sum = 0;
-            temp = n;
-            while (temp != 0) {
-                r = temp % 10;
+     static int sumOfAllDigitsInANumber(int  n){
+      int r = 0, sum = 0;
+            while (n != 0) {
+                r = n % 10;
                 sum = sum + r;
-                temp = temp / 10;
+                n = n / 10;
             }
             return sum;
    }
