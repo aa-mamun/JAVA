@@ -19,7 +19,7 @@ public class ReomoveWhiteSpace {
         
         System.out.println(str.replaceAll("\\s",""));
         
-        StringBuilder sb = new StringBuilder();
+        StringBuffer sb = new StringBuffer();
         char[] chArr = str.toCharArray();
         for(char c : str.toCharArray()){
             if(c != ' ' && c != '\t'){

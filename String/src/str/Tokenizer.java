@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package str;
 
 /**
  *
@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 public class Tokenizer{  
  public static void main(String args[]){  
      // it is deprected now coz regex does not work here
-   StringTokenizer st = new StringTokenizer("my 'sdf'name12 is khan","\\s");  
+   StringTokenizer st = new StringTokenizer("Hello Jon Doe","\\s");  
      while (st.hasMoreTokens()) {  
          System.out.println(st.nextToken());  
      }  
