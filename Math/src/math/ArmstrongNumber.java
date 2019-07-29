@@ -1,7 +1,7 @@
 package math;
 
 /*
-Note- A number is armstrong if the sum of the cubes of digit of number is equal to the number.
+Note- A number is armstrong if the sum of the cubes of digits of number is equal to the number.
 ex- 407 = 4*4*4 + 0*0*0 + 7*7*7
  */
 
