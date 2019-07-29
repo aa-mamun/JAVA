@@ -77,6 +77,7 @@ public class DecToBin {
                  
                  int d = digits.indexOf(c);
                  val = 16*val + d;
+             
              }
              return val;
     }
@@ -95,16 +96,11 @@ public class DecToBin {
        System.out.println("The binary representation is " + binary);
        String hex = toHexadecimal(decimal);
        System.out.println("The hexadecima  is " + hex);
+       int decimalFromHex = hexTOdecimal(hex);
+       System.out.println("Decimal from hex "+hex +" is "+decimalFromHex);
        int decNum = binaryToDecimal(Integer.valueOf(binary));
        System.out.println("decimal of the above binary is " + decNum);
-       
-       Integer.parseInt("bin", m);
-       Integer.parseInt("oct", m);
-       Integer.parseInt("hex", m);
-       
-       //Integer.toBinaryString(m)
-       //Integer.toOctalString(m)
-       //Integer.toHexString(m)
+
              
        
        
