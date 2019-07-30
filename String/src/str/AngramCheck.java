@@ -3,11 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practice;
+package str;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+/** 
+ * An anagram of a string is another string that contains same characters, 
+ * only the order of characters can be different. 
+ * For example, “abcd” and “dabc” are anagram of each other.
+ */
 /**
  *
  * @author MAMUN
