@@ -40,13 +40,12 @@ public class DuplicateCahrInString {
         }
         //Occurence of charecter in a string
         System.out.println(map);
-        //Getting a Set containing all keys of charCountMap
-        Set<Character> set = map.keySet();
+        
 
         System.out.println("Duplicate Characters In " + inputString);
 
         //Iterating through Set 'charsInString'
-        for (char ch : set) {
+        for (char ch : strArray) {
             if (map.get(ch) > 1) {
                 //If any char has a count of more than 1, printing it's count
 

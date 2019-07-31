@@ -11,7 +11,7 @@ right and left character. We will have two global variables to save the start an
 palindrome. We also need to check if there is already a longer palindrome found since there can we 
 multiple palindrome in the given string.
  */
-package newpackage;
+package str;
   
 /**
  *

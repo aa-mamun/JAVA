@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package practice;
+
+package str;
 
 import java.text.DecimalFormat;
 
@@ -59,7 +55,7 @@ public class PercentageOfElements {
      
     public static void main(String[] args) 
     {
-        characterPercentage("Tiger Runs @ The Speed Of 100 km/hour.");
+        characterPercentage("He is driving  @  100 km/hour.");
     }
 }
 

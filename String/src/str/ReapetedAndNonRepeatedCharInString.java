@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practice;
+package str;
 
 /**
  *
@@ -17,38 +17,35 @@ public class ReapetedAndNonRepeatedCharInString
 {    
     static void firstRepeatedNonRepeatedChar(String inputString)
     {
-        Map<Character, Integer> charCountMap = new HashMap<Character, Integer>();
+        Map<Character, Integer> map = new HashMap<Character, Integer>();
         char[] strArray = inputString.toCharArray();
         for (char c : strArray)
         {
-            if(charCountMap.containsKey(c))
+            if(map.containsKey(c))
             {
-                charCountMap.put(c, charCountMap.get(c)+1);
+                map.put(c, map.get(c)+1);
             }
             else
             {
-                charCountMap.put(c, 1);
+                map.put(c, 1);
             }
         }
          
         //checking for first non-repeated character
         for (char c : strArray)
         {
-            if (charCountMap.get(c) == 1)
+            if (map.get(c) == 1)
             {
                 System.out.println("First Non-Repeated Character In '"+inputString+"' is '"+c+"'");
                 break;
             }
-        } 
-        //checking for first repeated character
-        for (char c : strArray)
-        {
-            if (charCountMap.get(c) > 1)
+            //checking for first repeated character
+            if (map.get(c) > 1)
             {
                 System.out.println("First Repeated Character In '"+inputString+"' is '"+c+"'");
-                break;
+               break;
             }
-        }
+        } 
     }
      
     public static void main(String[] args)
