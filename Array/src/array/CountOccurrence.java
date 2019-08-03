@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package newpackage;
+
+package array;
 
 /**
  *
@@ -21,8 +17,6 @@ public class CountOccurrence {
         String str = "Read Java,Do Java,Discover Java";
         char[] ch = str.toCharArray();
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-       // Map<Character, Integer> map = new HashMap<Character, Integer>();
-       // for (char i : ch) {
         for (int i : numbers) {
           
           
@@ -32,13 +26,10 @@ public class CountOccurrence {
             } else {
                 map.put(i, 1);
             }
-        }
-        //Set<Character> set = map.keySet();
+        }  
         Set<Integer> set = map.keySet();
         System.out.println("Duplicate Elements In Array");
-
-        //Iterating through Set 'charsInString'
-        //for (char i : set) {
+        
         for (int i : set) {
             if (map.get(i) > 1) {
                 //If any char has a count of more than 1, printing it's count

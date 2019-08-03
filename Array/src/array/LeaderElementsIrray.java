@@ -1,5 +1,5 @@
 
-package newpackage;
+package array;
 
 /*
  An element is said to be leader if all the elements on it’s right side are smaller than it.

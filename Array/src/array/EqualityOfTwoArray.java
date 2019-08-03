@@ -1,9 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package newpackage;
+
+package array;
+
+import java.util.Arrays;
 
 /**
  *
@@ -19,7 +17,9 @@ public class EqualityOfTwoArray {
         String[] arrayOne = {"java", "j2ee", "struts", "hibernate"};
          
         String[] arrayTwo = {"java", "j2ee", "struts", "hibernate"};
-         */
+         
+        System.out.println(Arrays.deepEquals(arrayOne, arrayTwo));  
+*/
         boolean equalOrNot = true;
 
         if (arrayOne.length == arrayTwo.length) {
