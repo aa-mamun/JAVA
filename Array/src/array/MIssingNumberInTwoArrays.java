@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package array;
 
 /**
  *
@@ -35,5 +35,21 @@ public class MIssingNumberInTwoArrays {
             }
         }
         return false;
+    }
+    
+    public int findMissingNumberVersionTWo(int[] arrOne, int[] arraTwo) {
+
+        for (int i = 0; i < arrOne.length; i++) {
+            boolean present = false;
+            for (int j = 0; j < arraTwo.length; j++) {
+                if (arrOne[i] == arraTwo[j]) {
+                    present = true;
+                }
+            }
+            if (present == false) {
+                return arrOne[i];
+            }
+        }
+        return arrOne[0];
     }
 }
