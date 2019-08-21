@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package mathclass;
 
 /**
  *
@@ -35,6 +35,6 @@ public class BigIntegerDemo {
 	System.out.println( str2 );
         
         bi6=bi1.add(bi5);
-        System.out.println( "REsult is "   +bi6 );
+        System.out.println( "Result is "   +bi6 );
    }
 }

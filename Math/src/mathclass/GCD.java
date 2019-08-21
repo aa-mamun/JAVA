@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package mathclass;
 
 /**
  *
@@ -24,6 +24,7 @@ public static void main(String[] args) {
 
 	// assign gcd of bi1, bi2 to bi3
 	bi3 = bi1.gcd(bi2);
+        
 
 	String str = "GCD of " + bi1 + " and " + bi2 + " is " +bi3;
 
