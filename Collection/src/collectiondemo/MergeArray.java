@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package collectiondemo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,9 +18,9 @@ public class MergeArray {
    public static void main(String args[]) {
       String a[] = { "A", "E", "I" };
       String b[] = { "O", "U" };
-      List list = new ArrayList(Arrays.asList(a));
+      List list = new ArrayList();
+      list.addAll(Arrays.asList(a));
       list.addAll(Arrays.asList(b));
-      Object[] c = list.toArray();
-      System.out.println(Arrays.toString(c));
+      System.out.println(list);
    }
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cool;
+package collectiondemo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,9 +29,9 @@ public class ReomoveDuplicateElements {
             set.add(i);
         }
         
-        Iterator itr = set.iterator();
-        while(itr.hasNext()){
-            System.out.print(itr.next()+" ");
+      
+        for(int i : set){
+            System.out.print(i+" ");
         }
     }
 }

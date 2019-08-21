@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package collectiondemo;
 
 import java.util.Arrays;
 
@@ -22,7 +22,7 @@ public class EqualityOfArrays {
       +Arrays.equals(ary, ary2));
       String[] st1 ={"qw" , "we" , "er"};
       String[] st2 ={"qw" , "we" , "er"};
-      System.out.println("Is array 1 equal to array 2?? "
+      System.out.println("Is st1 1 equal to st2 ?? "
       +Arrays.equals(st1, st2));
     }
 }
