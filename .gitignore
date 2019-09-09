@@ -1,8 +1,22 @@
-/Array/nbproject/private/
-/Math/nbproject/private/
-/Math/build/
-/Array/build/
-/String/nbproject/private/
-/String/build/
-/Collection/nbproject/private/
-/Collection/build/
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
